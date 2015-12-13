@@ -21,6 +21,7 @@ public class Player {
     private int toughness;
 
 //getters and setters for class variables
+
     public double getWeight () {
         return weight;
     }
@@ -101,12 +102,12 @@ public class Player {
         this.strength = strength;
     }
 
-    public int getIntelligence() {
-        return intelligence;
+    public int getAwareness() {
+        return awareness;
     }
 
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
+    public void setAwareness(int awareness) {
+        this.awareness = awareness;
     }
 
     public int getToughness() {
