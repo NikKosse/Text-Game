@@ -17,7 +17,7 @@ public class Player {
     //player stats
     private int speed;
     private int strength;
-    private int intelligence;
+    private int awareness;
     private int toughness;
 
 //getters and setters for class variables
