@@ -1,4 +1,4 @@
-package Models;
+package com.kosse.nikolas.textAdventure.Models;
 
 /**
  * Model for the player.  Contains all stats about the player character
