@@ -1,5 +1,6 @@
 package com.kosse.nikolas.textAdventure.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,6 +40,7 @@ public class StartActivity extends AppCompatActivity {
     }
 
     public void startNew(View view){
-
+        Intent intent = new Intent(StartActivity.this, GameActivity.class);
+        StartActivity.this.startActivity(intent);
     }
 }

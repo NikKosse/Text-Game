@@ -7,4 +7,8 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="startImageDescription">image to display on start screen</string>
+    <string name="loadGameButton">Load Game</string>
+    <string name="newGameButton">New Game</string>
+    <string name="startActivityTitle">Text Adventure</string>
 </resources>
