@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/save_game" android:title="@string/save_game"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/load_game" android:title="@string/load_game"
+        android:orderInCategory="200" app:showAsAction="never" />
 </menu>

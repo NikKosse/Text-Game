@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_camara" android:icon="@android:drawable/ic_menu_camera"
-            android:title="Import" />
-        <item android:id="@+id/nav_gallery" android:icon="@android:drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_health" android:title="@string/player_health" />
+        <item android:id="@+id/nav_fatigue" android:title="@string/player_fatigue" />
+        <item android:id="@+id/nav_intelligence" android:title="@string/player_intelligence" />
+        <item android:id="@+id/nav_toughness" android:title="@string/player_toughness" />
+        <item android:id="@+id/nav_strength" android:title="@string/player_strength" />
+        <item android:id="@+id/nav_speed" android:title="@string/player_speed" />
+        <item android:id="@+id/nav_awareness" android:title="@string/player_awareness" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
-                android:title="Share" />
-            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_gold" android:title="@string/player_gold" />
+        <item android:id="@+id/nav_time_of_day" android:title="@string/time_of_day"/>
+    </group>
+
 
 </menu>
