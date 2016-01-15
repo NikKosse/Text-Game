@@ -22,4 +22,7 @@
     <string name="game_drawer_header">Player Stats</string>
     <string name="time_of_day">Time of day:</string>
     <string name="drawer_header_text">Player Information</string>
+    <string name="default_camp_text">You are in your camp. From here you can explore, access your inventory, sleep, or wait.</string>
+    <string name="explore_button">Explore Forest</string>
+    <string name="forest_text">You explore the forest, not encountering any animals, and enjoy the peaceful sounds.</string>
 </resources>
