@@ -101,6 +101,6 @@ public class GameActivity extends AppCompatActivity
         TextView text = (TextView)findViewById(R.id.mainGameText);
         text.setText(getString(R.string.forest_text));
         Button exploreButton =  (Button)findViewById(R.id.exploreButton);
-
+        exploreButton.setVisibility(View.GONE);
     }
 }
