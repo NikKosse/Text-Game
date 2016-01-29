@@ -97,10 +97,11 @@ public class GameActivity extends AppCompatActivity
         return true;
     }
 
-    public void displayExploreOption(View view){
+    public void exploreForest(View view){
         TextView text = (TextView)findViewById(R.id.mainGameText);
         text.setText(getString(R.string.forest_text));
         Button exploreButton =  (Button)findViewById(R.id.exploreButton);
         exploreButton.setVisibility(View.GONE);
+
     }
 }

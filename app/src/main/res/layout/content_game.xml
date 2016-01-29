@@ -24,9 +24,11 @@
         android:layout_height="wrap_content"
         android:text="@string/explore_button"
         android:id="@+id/exploreButton"
+        android:layout_marginBottom="85dp"
+        android:onClick="exploreForest"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="117dp"
-        android:onClick="displayExploreOption"/>
+        android:layout_centerHorizontal="true" />
+
+    <!--<include layout="@layout/return_to_camp_button"/>-->
 
 </RelativeLayout>
