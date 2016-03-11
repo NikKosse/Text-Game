@@ -1,5 +1,6 @@
 package com.kosse.nikolas.textAdventure.Activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -13,10 +14,16 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.kosse.nikolas.textAdventure.Controllers.Locations.Camp;
+import com.kosse.nikolas.textAdventure.Controllers.Locations.Forest;
 import com.kosse.nikolas.textAdventure.R;
 
 public class GameActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Forest _forest;
+    private Camp _camp;
+    private Context _context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +106,9 @@ public class GameActivity extends AppCompatActivity
 
     public void exploreForest(View view){
         TextView text = (TextView)findViewById(R.id.mainGameText);
-        text.setText(getString(R.string.forest_text));
+        String updateText = _forest.getActionText(_context);
+
+        text.setText(updateText);
         Button exploreButton =  (Button)findViewById(R.id.exploreButton);
         exploreButton.setVisibility(View.GONE);
 
