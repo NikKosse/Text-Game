@@ -1,6 +1,11 @@
 package com.kosse.nikolas.textAdventure.Controllers.Locations;
 
+import android.content.Context;
 import android.test.AndroidTestCase;
+
+import com.kosse.nikolas.textAdventure.ContextSource;
+
+import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +26,10 @@ public class ForestTest {
 
     @Test
     public void testGetActionText_returnsString() throws Exception {
+        String expectedText = "You explore the forest, not encountering any animals, and enjoy the peaceful sounds.";
 
-//        _forest.getActionText(context);
+        String actualText = _forest.getActionText();
+
+        Assert.assertEquals(expectedText, actualText);
     }
 }

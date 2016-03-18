@@ -2,6 +2,7 @@ package com.kosse.nikolas.textAdventure.Activities;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,10 +24,13 @@ public class GameActivity extends AppCompatActivity
 
     private Forest _forest;
     private Camp _camp;
-    private Context _context;
+    private final String TAG = "GameActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        _forest = new Forest();
+        _camp = new Camp();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -106,7 +110,7 @@ public class GameActivity extends AppCompatActivity
 
     public void exploreForest(View view){
         TextView text = (TextView)findViewById(R.id.mainGameText);
-        String updateText = _forest.getActionText(_context);
+        String updateText = _forest.getActionText();
 
         text.setText(updateText);
         Button exploreButton =  (Button)findViewById(R.id.exploreButton);

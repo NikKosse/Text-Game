@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kosse.nikolas.textAdventure" >
 
+    <!--<application android:name="com.xyz.MyApplication">-->
+
+    <!--</application>-->
+
     <application
+        android:name="com.kosse.nikolas.textAdventure.ContextSource"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
